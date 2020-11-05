@@ -10,5 +10,8 @@ public class StringTest {
 //        String[] arrays = "1。2".split("。");
         String[] arrays = "1.2".split("\\.");
         System.out.println(arrays.length);
+
+        String  a = "12间";
+        System.out.println(a.substring(0,a.length()-1));
     }
 }
