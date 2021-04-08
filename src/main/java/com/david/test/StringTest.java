@@ -1,5 +1,14 @@
 package com.david.test;
 
+import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
+import com.google.common.collect.Lists;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 /**
  * @author David
  * @date 2020/3/25
@@ -13,23 +22,54 @@ public class StringTest {
 //
 //        String  a = "12间";
 //        System.out.println(a.substring(0,a.length()-1));
+//
+//        String tcpStr = "AT+CWSAP_DEF=" + "\"DALIGE\"" + "," + "\"12345678\"" + "," + "11,4";
+//
+//        // 转义字符串两边含有双引号
+//        String str1 = "\"david\"";
+//        System.out.println("转义字符串两边含有双引号：" + str1);
+//        // 字符串中间含有双引号
+//        String str2 = "david\"is\"java";
+//        System.out.println("字符串中间含有双引号：" + str2);
+//        // 使用转义字符还可以使字符串包含其他字符
+//        String str3 = "\\david";
+//        System.out.println("使用转义字符还可以使字符串包含其他字符：" + str3);
+//        // 变量使用双引号包括
+//        String userName = "david";
+//        userName = "java";
+//        String str4 = '\"' + userName + '\"';
+//        System.out.println("变量使用双引号包括:" + str4);
+//        System.out.println(tcpStr);
+//
+//
+//        String time = "2021-01-01T08:41:00";
+//        String[] t = time.split("T");
+//        String s = t[0] +" "+ t[1];
+//        System.out.println(s);
 
-        String tcpStr = "AT+CWSAP_DEF=" + "\"DALIGE\"" + "," + "\"12345678\"" + "," + "11,4";
+        String admissionDate = "2021-03-25 09:09:00";
 
-        // 转义字符串两边含有双引号
-        String str1 = "\"david\"";
-        System.out.println("转义字符串两边含有双引号：" + str1);
-        // 字符串中间含有双引号
-        String str2 = "david\"is\"java";
-        System.out.println("字符串中间含有双引号：" + str2);
-        // 使用转义字符还可以使字符串包含其他字符
-        String str3 = "\\david";
-        System.out.println("使用转义字符还可以使字符串包含其他字符：" + str3);
-        // 变量使用双引号包括
-        String userName = "david";
-        userName = "java";
-        String str4 = '\"' + userName + '\"';
-        System.out.println("变量使用双引号包括:" + str4);
-        System.out.println(tcpStr);
+        DateTime time = DateUtil.parseDateTime(admissionDate);
+        time.getTime();
+        System.out.println("time = "+ time.getTime());
+
+        String today = DateUtil.today();
+        System.out.println(today);
+
+        String year = admissionDate.substring(0,4);
+        String month = admissionDate.substring(4,6);
+        String day =admissionDate.substring(6,8);
+        admissionDate = year+"-"+month+"-"+day;
+        if (admissionDate.equals(today)){
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
+
+        System.out.println("---------------");
+//        System.out.println(com.david.utils.DateUtil.isAfterDay(System.currentTimeMillis(), time.getTime()));
+        System.out.println(DateUtil.isSameDay(new Date(),time));
+
+
     }
 }

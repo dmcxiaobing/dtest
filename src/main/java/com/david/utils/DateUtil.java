@@ -1311,5 +1311,33 @@ public class DateUtil {
 		return calendar.getTimeInMillis();
 	}
 
-	
+	/**
+	 * 	判断是不是昨天、明天
+	 * @param day1
+	 * @param day2
+	 * @return
+	 */
+	public static boolean isYestoday(long day1, long day2) {
+		Calendar instance = Calendar.getInstance();
+		instance.setTimeInMillis(day1);
+		int d1 = instance.get(Calendar.DAY_OF_YEAR);
+		instance.setTimeInMillis(day2);
+		int d2 = instance.get(Calendar.DAY_OF_YEAR);
+		return d1 - d2 == 1 || d2 - d1 == 1;
+	}
+
+	/**
+	 * 	判断是不是明天
+	 * @param day1
+	 * @param day2
+	 * @return
+	 */
+	public static boolean isAfterDay(long day1, long day2) {
+		Calendar instance = Calendar.getInstance();
+		instance.setTimeInMillis(day1);
+		int d1 = instance.get(Calendar.DAY_OF_YEAR);
+		instance.setTimeInMillis(day2);
+		int d2 = instance.get(Calendar.DAY_OF_YEAR);
+		return d2 - d1 == 1;
+	}
 }

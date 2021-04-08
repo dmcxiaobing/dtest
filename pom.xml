@@ -124,5 +124,11 @@
             <artifactId>hutool-all</artifactId>
             <version>4.5.13</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0-jre</version>
+        </dependency>
     </dependencies>
 </project>
