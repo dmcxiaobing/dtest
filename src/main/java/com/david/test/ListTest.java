@@ -14,5 +14,9 @@ public class ListTest {
         List<String> list2 = Lists.newArrayList();
         System.out.println(CollectionUtil.isEmpty(list));
         System.out.println(CollectionUtil.isNotEmpty(list2));
+
+        String str = "+01";
+        System.out.println(str.substring(1));
+
     }
 }
