@@ -9,7 +9,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public class DateUtil {
-    //集中常用的日期格式
+    //集中常用的日期格式20210601105516
     public static final String YYYY_MM_DD = "yyyy-MM-dd";
     public static final String YYYY_MM_DD_HH = "yyyy-MM-dd HH";
     public static final String YYYY_MM_DD_HH_MM = "yyyy-MM-dd HH:mm";
