@@ -19,5 +19,8 @@ public class ListTest {
 
         String a = "1x";
         System.out.println(a.substring(1));
+
+
+
     }
 }

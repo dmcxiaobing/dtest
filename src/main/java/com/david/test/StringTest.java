@@ -1,13 +1,9 @@
 package com.david.test;
 
-import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
-import com.google.common.collect.Lists;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @author David
@@ -70,6 +66,10 @@ public class StringTest {
 //        System.out.println(com.david.utils.DateUtil.isAfterDay(System.currentTimeMillis(), time.getTime()));
         System.out.println(DateUtil.isSameDay(new Date(),time));
 
+        String age = "1岁";
+        int sui = age.indexOf("岁");
+        System.out.println(sui);
 
+        System.out.println(age.substring(0,sui+1));
     }
 }
