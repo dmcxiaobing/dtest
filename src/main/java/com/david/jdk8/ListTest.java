@@ -5,6 +5,9 @@ import com.google.common.collect.Lists;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ *
+ */
 public class ListTest {
     public static void main(String[] args) {
         List<Integer> list = Lists.newArrayList(1, 2, 3);

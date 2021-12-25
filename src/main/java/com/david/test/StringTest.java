@@ -43,33 +43,46 @@ public class StringTest {
 //        String s = t[0] +" "+ t[1];
 //        System.out.println(s);
 
-        String admissionDate = "2021-03-25 09:09:00";
-
-        DateTime time = DateUtil.parseDateTime(admissionDate);
-        time.getTime();
-        System.out.println("time = "+ time.getTime());
-
-        String today = DateUtil.today();
-        System.out.println(today);
-
-        String year = admissionDate.substring(0,4);
-        String month = admissionDate.substring(4,6);
-        String day =admissionDate.substring(6,8);
-        admissionDate = year+"-"+month+"-"+day;
-        if (admissionDate.equals(today)){
-            System.out.println(true);
-        }else {
-            System.out.println(false);
-        }
-
-        System.out.println("---------------");
-//        System.out.println(com.david.utils.DateUtil.isAfterDay(System.currentTimeMillis(), time.getTime()));
-        System.out.println(DateUtil.isSameDay(new Date(),time));
-
-        String age = "1岁";
-        int sui = age.indexOf("岁");
-        System.out.println(sui);
-
-        System.out.println(age.substring(0,sui+1));
+//        String admissionDate = "2021-03-25 09:09:00";
+//
+//        DateTime time = DateUtil.parseDateTime(admissionDate);
+//        time.getTime();
+//        System.out.println("time = "+ time.getTime());
+//
+//        String today = DateUtil.today();
+//        System.out.println(today);
+//
+//        String year = admissionDate.substring(0,4);
+//        String month = admissionDate.substring(4,6);
+//        String day =admissionDate.substring(6,8);
+//        admissionDate = year+"-"+month+"-"+day;
+//        if (admissionDate.equals(today)){
+//            System.out.println(true);
+//        }else {
+//            System.out.println(false);
+//        }
+//
+//        System.out.println("---------------");
+////        System.out.println(com.david.utils.DateUtil.isAfterDay(System.currentTimeMillis(), time.getTime()));
+//        System.out.println(DateUtil.isSameDay(new Date(),time));
+//
+//        String age = "1000岁";
+//        int sui = age.indexOf("岁");
+//        System.out.println(sui);
+//
+//        System.out.println(age.substring(0,sui+1));
+//
+//
+//        String name = "zhangsan12";
+//        System.out.println(name.substring(0,name.length()-2));
+//
+//
+//
+//        String bedCode = "12+34";
+//        System.out.println(bedCode.replaceAll("[a-zA-Z]", ""));
+//
+        int count = 1000;
+        int all  = 900;
+        System.out.println(all/count);
     }
 }
