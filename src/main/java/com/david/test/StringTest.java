@@ -81,8 +81,14 @@ public class StringTest {
 //        String bedCode = "12+34";
 //        System.out.println(bedCode.replaceAll("[a-zA-Z]", ""));
 //
-        int count = 1000;
-        int all  = 900;
-        System.out.println(all/count);
+//        int count = 1000;
+//        int all  = 900;
+//        System.out.println(all/count);
+
+
+        Integer age = Integer.valueOf("80");
+        if (age >= 65) {
+            System.out.println("age > 80");
+        }
     }
 }
