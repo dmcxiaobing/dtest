@@ -90,5 +90,11 @@ public class StringTest {
         if (age >= 65) {
             System.out.println("age > 80");
         }
+
+
+        String a = "d7ade87255944b4e8ef00b4a27f8858323bef1c6b61e58ccd432af57de965c0a";
+        String b = "d7ade87255944b4e8ef00b4a27f8858323bef1c6b61e58ccd432af57de965c0a";
+        a = a.substring(0,5);
+        System.out.println(a);
     }
 }

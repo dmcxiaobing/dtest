@@ -1,6 +1,9 @@
 package com.david.entity;
 
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 import java.io.Serializable;
 
 /**
@@ -12,13 +15,7 @@ public class User implements Serializable {
     private String name;
     private String sex;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private int age;
 
     public String getSex() {
         return sex;
@@ -26,5 +23,21 @@ public class User implements Serializable {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
